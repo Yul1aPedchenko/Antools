@@ -1,0 +1,14 @@
+:root {
+    --background-color: #1E252B;
+    --main-text-color: #1E252B;
+    --second-text-color: rgba(255, 255, 255, 0.55);
+    --third-text-color: rgba(255, 165, 55, 0.55);
+    --button-color: #FF6E30;
+    --slider-disactive-color: #283036;
+}
+
+.container {
+    width: 1254px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
