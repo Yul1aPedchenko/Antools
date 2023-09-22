@@ -1,6 +1,6 @@
 :root {
     --background-color: #1E252B;
-    --main-text-color: #1E252B;
+    --main-text-color: #ffffff;
     --second-text-color: rgba(255, 255, 255, 0.55);
     --third-text-color: rgba(255, 165, 55, 0.55);
     --button-color: #FF6E30;
@@ -11,4 +11,246 @@
     width: 1254px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.header {
+    font-size: 16px;
+}
+
+.nav-wrapper {
+    background-color: var(--background-color);
+    font-weight: 500;
+    color: var(--second-text-color);
+}
+
+.button-login {
+    border: none;
+    background-color: var(--background-color);
+    color: var(--second-text-color);
+    font-weight: 600;
+}
+
+.button-sign {
+    color: #FDF5FF;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    padding: 12px 28px;
+}
+
+/* First section */
+
+.first-section-title {
+    color: var(--main-text-color);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+    width: 600px;
+    margin-top: 78px;
+}
+
+.span-point {
+    color: var(--button-color);
+}
+
+.first-section-text {
+    color: var(--second-text-color);
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.first-input {
+    background-color: var(--slider-disactive-color);
+    border-radius: 15px;
+    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    padding: 21px;
+    padding-right: 250px;
+    margin-top: 60px;
+}
+
+.button-search {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 36px;
+}
+
+.first-social-networks {
+    margin-top: 110px;
+}
+
+.social-network-items {
+    width: 36px;
+    height: 36px;
+}
+
+/* second section */
+
+.second-section-title {
+    color: var(--main-text-color);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-top: 200px;
+}
+
+.second-section-text {
+    color: var(--second-text-color);
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+.card-list {
+    margin-top: 110px;
+}
+
+.card {
+    width: 392px;
+    border-radius: 15px;
+}
+
+.app-img {
+    width: 64px;
+}
+
+.app-name {
+    color: var(--main-text-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-top: 33px;
+}
+
+.app-status {
+    color: var(--third-text-color);
+}
+
+.app-text {
+    color: var(--second-text-color);
+    font-size: 16px;
+}
+
+.app-icon:nth-child(2) {
+    margin-top: 165px;
+}
+
+.app-icon-item {
+    width: 30px;
+    height: 30px;
+}
+
+.link-visit {
+    color: var(--second-text-color);
+    font-weight: 600;
+}
+
+.button-load-more {
+    background-color: var(--background-color);
+    color: var(--button-color);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 17px 38px;
+    margin-top: 100px;
+}
+
+/* brand section */
+
+.brand-section {
+    margin-top: 200px;
+}
+
+.brand-section-title {
+    color: var(--second-text-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 55px;
+}
+
+.brand-logos {
+    margin: 82px 55px;
+}
+
+.logos-item:not(:last-child) {
+    margin-right: 107px;
+}
+
+/* Section tools */
+
+.secion-tools {
+    margin-top: 220px;
+}
+
+.tools-section-title {
+    color: var(--main-text-color);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.tools-section-text {
+    color: var(--second-text-color);
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.button-explore-more {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    font-weight: 500px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 40px;
+}
+
+.tools-card-item {
+    width: 288px;
+    border-radius: 15px;
+}
+
+.tool-name {
+    color: var(--main-text-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-top: 28px;
+}
+
+.tool-text {
+    color: var(--second-text-color);
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/* section investor */
+
+.section-investor {
+    margin-top: 200px;
+}
+
+.investor-title {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.investor-text {
+    color: var(--second-text-color);
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 25px;
 }
