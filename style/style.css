@@ -1,9 +1,13 @@
 :root {
     --background-color: #1E252B;
     --main-text-color: #ffffff;
-    --second-text-color: rgba(255, 255, 255, 0.55);
-    --third-text-color: rgba(255, 165, 55, 0.55);
+    --white-text-38-color: rgba(255, 255, 255, 0.38);
+    --white-text-55-color: rgba(255, 255, 255, 0.55);
+    --white-text-78-color: rgba(255, 255, 255, 0.78);
+    --white-text-90-color: rgba(255, 255, 255, 0.90);
+    --status-text-color: rgba(255, 165, 55, 0.55);
     --button-color: #FF6E30;
+    --active-card-status: #FFA537;
     --slider-disactive-color: #283036;
 }
 
@@ -26,13 +30,18 @@ body {
 .nav-wrapper {
     background-color: var(--background-color);
     font-weight: 500;
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
+}
+
+.header-categories {
+    border: none;
+    background-color: var(--background-color);
 }
 
 .button-login {
     border: none;
     background-color: var(--background-color);
-    color: var(--second-text-color);
+    color: var(--white-text-78-color);
     font-weight: 600;
 }
 
@@ -48,7 +57,7 @@ body {
 /* First section */
 
 .first-section-title {
-    color: var(--main-text-color);
+    color: var(--white-text-90-color);
     font-size: 50px;
     font-weight: 500;
     line-height: 70px;
@@ -61,7 +70,7 @@ body {
 }
 
 .first-section-text {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     line-height: 30px;
     margin-top: 30px;
 }
@@ -73,6 +82,7 @@ body {
     padding: 21px;
     padding-right: 250px;
     margin-top: 60px;
+    font-size: 14px;
 }
 
 .button-search {
@@ -97,7 +107,7 @@ body {
 /* second section */
 
 .second-section-title {
-    color: var(--main-text-color);
+    color: var(--white-text-90-color);
     font-size: 48px;
     font-weight: 500;
     line-height: 130%;
@@ -105,7 +115,7 @@ body {
 }
 
 .second-section-text {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     font-weight: 500;
     line-height: 30px;
     margin-top: 25px;
@@ -125,7 +135,7 @@ body {
 }
 
 .app-name {
-    color: var(--main-text-color);
+    color: var(--white-text-78-color);
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 3px;
@@ -133,11 +143,11 @@ body {
 }
 
 .app-status {
-    color: var(--third-text-color);
+    color: var(--status-text-color);
 }
 
 .app-text {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     font-size: 16px;
 }
 
@@ -151,7 +161,7 @@ body {
 }
 
 .link-visit {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     font-weight: 600;
 }
 
@@ -173,7 +183,7 @@ body {
 }
 
 .brand-section-title {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     font-size: 24px;
     font-weight: 500;
     margin-top: 55px;
@@ -194,14 +204,14 @@ body {
 }
 
 .tools-section-title {
-    color: var(--main-text-color);
+    color: var(--white-text-90-color);
     font-size: 48px;
     font-weight: 500;
     line-height: 130%;
 }
 
 .tools-section-text {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     font-weight: 500;
     line-height: 30px;
     margin-top: 30px;
@@ -222,7 +232,7 @@ body {
 }
 
 .tool-name {
-    color: var(--main-text-color);
+    color: var(--white-text-78-color);
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 3px;
@@ -230,7 +240,7 @@ body {
 }
 
 .tool-text {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     font-size: 14px;
     line-height: 30px;
 }
@@ -242,15 +252,79 @@ body {
 }
 
 .investor-title {
-    color: rgba(255, 255, 255, 0.90);
+    color: var(--white-text-90-color);
     font-size: 48px;
     font-weight: 500;
     line-height: 130%;
 }
 
 .investor-text {
-    color: var(--second-text-color);
+    color: var(--white-text-55-color);
     font-weight: 500;
     line-height: 30px;
     margin-top: 25px;
+}
+
+.investor-form {
+    margin-top: 100px;
+}
+
+.investor-input {
+    background-color: var(--slider-disactive-color);
+    border-radius: 15px;
+    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    padding: 25px 21px;
+    padding-right: 401px;
+    font-size: 14px;
+}
+
+.button-join-us {
+    border: none;
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    border-radius: 8px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* footer */
+
+.copiright {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-text-90-color);
+    margin-top: 25px;
+}
+
+.copiright-info {
+    color: var(--white-text-55-color);
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 21px;
+}
+
+.footer-title {
+    color: var(--white-text-90-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    color: var(--white-text-55-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.f-categories-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.company-info-item:not(:last-child) {
+    margin-bottom: 10px;
 }
