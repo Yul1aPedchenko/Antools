@@ -11,10 +11,25 @@
     --slider-disactive-color: #283036;
 }
 
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
 .container {
-    width: 1254px;
+    width: 1255px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
 body {
@@ -25,6 +40,22 @@ body {
 
 .header {
     font-size: 16px;
+}
+
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 41px;
 }
 
 .nav-wrapper {
@@ -38,11 +69,17 @@ body {
     background-color: var(--background-color);
 }
 
+.header-button-list {
+    display: flex;
+    align-items: center;
+}
+
 .button-login {
     border: none;
     background-color: var(--background-color);
     color: var(--white-text-78-color);
     font-weight: 600;
+    margin-right: 41px;
 }
 
 .button-sign {
@@ -55,6 +92,12 @@ body {
 }
 
 /* First section */
+
+.first-section {
+    background-image: url(../img/header-background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
 
 .first-section-title {
     color: var(--white-text-90-color);
@@ -73,13 +116,19 @@ body {
     color: var(--white-text-55-color);
     line-height: 30px;
     margin-top: 30px;
+    width: 487px;
+}
+
+.form-first {
+    align-items: center;
 }
 
 .first-input {
     background-color: var(--slider-disactive-color);
     border-radius: 15px;
     border: 1.5px solid rgba(255, 255, 255, 0.10);
-    padding: 21px;
+    padding: 20px;
+    padding-left: 18px;
     padding-right: 250px;
     margin-top: 60px;
     font-size: 14px;
@@ -93,15 +142,24 @@ body {
     font-size: 16px;
     font-weight: 600;
     padding: 12px 36px;
+    margin-left: -145px;
+}
+
+.social-networks-list {
+    display: flex;
 }
 
 .first-social-networks {
     margin-top: 110px;
 }
 
-.social-network-items {
+.social-networks-items {
     width: 36px;
     height: 36px;
+}
+
+.social-networks-items:not(:last-child) {
+    margin-right: 31px;
 }
 
 /* second section */
@@ -243,6 +301,22 @@ body {
     color: var(--white-text-55-color);
     font-size: 14px;
     line-height: 30px;
+}
+
+/* section with man */
+
+.disactive-slider {
+    width: 44px;
+    height: 6px;
+    border-radius: 4px;
+    color: var(--slider-disactive-color);
+}
+
+.active-slider {
+    width: 44px;
+    height: 8px;
+    border-radius: 4px;
+    color: var(--button-color);
 }
 
 /* section investor */
