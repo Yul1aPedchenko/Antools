@@ -1,6 +1,9 @@
 :root {
     --background-color: #1E252B;
     --main-text-color: #ffffff;
+    --white-05-color: rgba(255, 255, 255, 0.05);
+    --white-10-color: rgba(255, 255, 255, 0.10);
+    --white-15-color: rgba(255, 255, 255, 0.15);
     --white-text-38-color: rgba(255, 255, 255, 0.38);
     --white-text-55-color: rgba(255, 255, 255, 0.55);
     --white-text-78-color: rgba(255, 255, 255, 0.78);
@@ -66,6 +69,11 @@ body {
     color: var(--white-text-55-color);
 }
 
+.nav-wrapper:hover,
+.nav-wrapper:focus {
+    color: var(--button-color);
+}
+
 .header-categories {
     border: none;
     background-color: var(--background-color);
@@ -82,15 +90,27 @@ body {
     color: var(--white-text-78-color);
     font-weight: 600;
     margin-right: 41px;
+    cursor: pointer;
+}
+
+.button-login:hover {
+    color: var(--main-text-color);
 }
 
 .button-sign {
     color: #FDF5FF;
     font-weight: 600;
-    border: none;
+    border: 1px solid var(--button-color);
     border-radius: 8px;
     background-color: var(--button-color);
     padding: 12px 28px;
+    cursor: pointer;
+}
+
+.button-sign:hover {
+    background-color: var(--background-color);
+    color: var(--button-color);
+    border: 1px solid var(--white-10-color);
 }
 
 /* First section */
@@ -128,7 +148,7 @@ body {
 .first-input {
     background-color: var(--slider-disactive-color);
     border-radius: 15px;
-    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    border: 1.5px solid var(--white-10-color);
     padding: 20px;
     padding-left: 18px;
     padding-right: 250px;
@@ -140,11 +160,18 @@ body {
     background-color: var(--button-color);
     color: var(--main-text-color);
     border-radius: 8px;
-    border: none;
+    border: 1px solid var(--button-color);
     font-size: 16px;
     font-weight: 600;
     padding: 12px 36px;
-    margin-left: -145px;
+    margin-left: -147px;
+    cursor: pointer;
+}
+
+.button-search:hover {
+    background-color: var(--slider-disactive-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-color);
 }
 
 .social-networks-list {
@@ -202,11 +229,12 @@ body {
     width: 392px;
     border-radius: 15px;
     padding: 33px;
+    border: 2px solid var(--background-color);
 }
 
 .card:hover {
     border-radius: 15px;
-    border: 2px solid rgba(255, 255, 255, 0.10);
+    border: 2px solid var(--white-10-color);
     background-color: rgba(40, 48, 54, 0.60);
     background-image: radial-gradient(circle farthest-side at 100% 0%, rgba(255, 110, 48, 0.20), rgba(44, 53, 61, 0.00) 130px);
     background-repeat: no-repeat;
@@ -279,6 +307,13 @@ body {
     color: var(--white-text-55-color);
     font-size: 16px;
     font-weight: 600;
+    padding: 9px 35px;
+}
+
+.link-visit:hover {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    border-radius: 8px;
 }
 
 .button-load-more {
@@ -287,11 +322,18 @@ body {
     font-size: 20px;
     font-weight: 500;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid var(--white-10-color);
     padding: 17px 38px;
     display: flex;
     text-align: center;
     margin: 0 auto;
+    cursor: pointer;
+}
+
+.button-load-more:hover {
+    border: 1px solid var(--button-color);
+    color: var(--main-text-color);
+    background-color: var(--button-color);
 }
 
 /* brand section */
@@ -299,7 +341,7 @@ body {
 .brand-section-border {
     margin-top: 200px;
     border-radius: 25px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--white-05-color);
     background-color: rgba(44, 53, 61, 0.20);
     backdrop-filter: blur(25px);
     background-image: radial-gradient(circle farthest-side at 0% 0%, rgba(255, 72, 66, 0.20), rgba(44, 53, 61, 0.00) 150px);
@@ -354,10 +396,18 @@ body {
     background-color: var(--button-color);
     color: var(--main-text-color);
     font-weight: 500px;
-    border: none;
+    border: 1px solid var(--button-color);
     border-radius: 8px;
     padding: 16px 40px;
     margin-top: 60px;
+}
+
+.button-explore-more:hover {
+    background-image: linear-gradient(var(--white-15-color), var(--white-15-color));
+    color: var(--main-text-color);
+    /* background-color: var(--background-color);
+    color: var(--button-color);
+    border: 1px solid var(--white-10-color); */
 }
 
 .tools-card-list {
@@ -373,6 +423,15 @@ body {
     padding-bottom: 28px;
     padding-left: 22px;
     padding-right: 21px;
+    border: 2px solid var(--background-color);
+}
+
+.tools-card-item:hover {
+    border: 2px solid var(--white-10-color);
+    background-color: rgba(40, 48, 54, 0.60);
+    background-image: radial-gradient(circle farthest-side at 100% 0%, rgba(255, 110, 48, 0.20), rgba(44, 53, 61, 0.00) 80px);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(25px);
 }
 
 .tools-card-item:not(:nth-child(2n)) {
@@ -425,13 +484,45 @@ body {
     color: var(--white-text-55-color);
     font-size: 16px;
     font-weight: 600;
-    margin-right: 34px;
+    padding: 9px 35px;
+}
+
+.tool-link-visit:hover {
+    border-radius: 8px;
+    background-color: var(--button-color);
+    color: var(--main-text-color);
 }
 
 /* section with man */
+.man-border {
+    display: flex;
+    align-items: center;
+}
 
 .section-reviews {
     margin-top: 200px;
+}
+
+.chevron-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    margin-left: 108px;
+}
+
+.left {
+    margin-right: 107px;
+}
+
+.man-text {
+    width: 393px;
+    color: var(--white-text-78-color);
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.21px;
 }
 
 /* section investor */
@@ -468,7 +559,7 @@ body {
 .investor-input {
     background-color: var(--slider-disactive-color);
     border-radius: 15px;
-    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    border: 1.5px solid var(--white-10-color);
     padding-top: 22px;
     padding-bottom: 21px;
     padding-left: 24px;
@@ -485,12 +576,18 @@ body {
     font-size: 16px;
     font-weight: 600;
     margin-left: -145px;
+    cursor: pointer;
+}
+
+.button-join-us:hover {
+    background-image: linear-gradient(var(--white-15-color), var(--white-15-color));
+    color: var(--main-text-color);
 }
 
 /* footer */
 
 .footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid var(--white-15-color);
 }
 
 .all-footer-sections {
@@ -527,6 +624,11 @@ body {
     color: var(--white-text-55-color);
     font-size: 16px;
     font-weight: 500;
+}
+
+.footer-item:hover {
+    /* color: var(--button-color); */
+    color: var(--main-text-color);
 }
 
 .contact-item:not(:last-child) {
