@@ -497,15 +497,11 @@ body {
 .man-border {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .section-reviews {
     margin-top: 200px;
-}
-
-.chevron-list {
-    display: flex;
-    justify-content: space-between;
 }
 
 .right {
@@ -523,6 +519,8 @@ body {
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.21px;
+    margin-left: -110px;
+    margin-top: -60px;
 }
 
 /* section investor */
