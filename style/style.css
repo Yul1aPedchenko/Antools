@@ -204,6 +204,15 @@ body {
     padding: 33px;
 }
 
+.card:hover {
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    background-color: rgba(40, 48, 54, 0.60);
+    background-image: radial-gradient(circle farthest-side at 100% 0%, rgba(255, 110, 48, 0.20), rgba(44, 53, 61, 0.00) 130px);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(25px);
+}
+
 .card:not(:nth-child(3n)) {
    margin-right: 24px;
 }
@@ -228,6 +237,7 @@ body {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 3px;
+    width: 229px;
 }
 
 .app-status {
@@ -239,6 +249,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     margin-top: 30px;
+    width: 326px;
 }
 
 .app-icon {
@@ -256,7 +267,7 @@ body {
 }
 
 .app-icon-wrapper:nth-child(2) {
-    margin-top: 165px;
+    margin-right: 165px;
     margin-left: 25px;
 }
 
@@ -268,7 +279,6 @@ body {
     color: var(--white-text-55-color);
     font-size: 16px;
     font-weight: 600;
-    margin-right: 35px;
 }
 
 .button-load-more {
@@ -291,7 +301,8 @@ body {
     border-radius: 25px;
     border: 2px solid rgba(255, 255, 255, 0.05);
     background-color: rgba(44, 53, 61, 0.20);
-    background-image: radial-gradient(ellipse farthest-corner at 0% 0%, rgba(255, 72, 66, 0.40), rgba(44, 53, 61, 0.00) 150px);
+    backdrop-filter: blur(25px);
+    background-image: radial-gradient(circle farthest-side at 0% 0%, rgba(255, 72, 66, 0.20), rgba(44, 53, 61, 0.00) 150px);
     background-repeat: no-repeat;
 }
 
