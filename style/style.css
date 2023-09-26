@@ -241,6 +241,10 @@ body {
     backdrop-filter: blur(25px);
 }
 
+/* .card >.app-status:hover {
+    color: var(--active-card-status);
+} */
+
 .card:not(:nth-child(3n)) {
    margin-right: 24px;
 }
@@ -292,6 +296,7 @@ body {
 
 .like {
     margin-right: 25px;
+    cursor: pointer;
 }
 
 .app-icon-wrapper:nth-child(2) {
@@ -301,6 +306,10 @@ body {
 
 .app-icon-wrapper:not(:last-child) {
     height: 28px;
+}
+
+.app-icon-item {
+    cursor: pointer;
 }
 
 .link-visit {
