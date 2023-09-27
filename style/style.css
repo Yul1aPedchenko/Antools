@@ -160,8 +160,8 @@ body {
 .button-search {
     background-color: var(--button-color);
     color: var(--main-text-color);
+    border: none;
     border-radius: 8px;
-    border: 1px solid var(--button-color);
     font-size: 16px;
     font-weight: 600;
     padding: 12px 36px;
@@ -170,9 +170,8 @@ body {
 }
 
 .button-search:hover {
-    background-color: var(--slider-disactive-color);
-    border: 1px solid var(--button-color);
-    color: var(--button-color);
+    background-image: linear-gradient(var(--white-15-color), var(--white-15-color));
+    color: var(--main-text-color);
 }
 
 .social-networks-list {
@@ -331,6 +330,11 @@ body {
     padding: 9px 35px;
 }
 
+.link-visit:hover {
+    background-image: linear-gradient(var(--white-15-color), var(--white-15-color));
+    color: var(--main-text-color);
+}
+
 .button-load-more {
     background-color: var(--background-color);
     color: var(--button-color);
@@ -415,14 +419,13 @@ body {
     border-radius: 8px;
     padding: 16px 40px;
     margin-top: 60px;
+    cursor: pointer;
 }
 
 .button-explore-more:hover {
-    background-image: linear-gradient(var(--white-15-color), var(--white-15-color));
-    color: var(--main-text-color);
-    /* background-color: var(--background-color);
+    background-color: var(--background-color);
     color: var(--button-color);
-    border: 1px solid var(--white-10-color); */
+    border: 1px solid var(--white-10-color);
 }
 
 .tools-card-list {
@@ -510,21 +513,25 @@ body {
     display: flex;
 }
 
+.tool-icon-item {
+    cursor: pointer;
+}
+
 .tool-link-visit {
     color: var(--white-text-55-color);
     font-size: 16px;
     font-weight: 600;
     padding: 9px 35px;
+    border-radius: 8px;
 }
 
 .tool-link-visit:hover {
-    border-radius: 8px;
-    background-color: var(--button-color);
+    background-image: linear-gradient(var(--white-15-color), var(--white-15-color));
     color: var(--main-text-color);
 }
 
 /* section with man */
-.man-border {
+.man-all-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -536,10 +543,12 @@ body {
 
 .right {
     margin-left: 108px;
+    cursor: pointer;
 }
 
 .left {
     margin-right: 107px;
+    cursor: pointer;
 }
 
 .man-text {
@@ -551,6 +560,31 @@ body {
     letter-spacing: 0.21px;
     margin-left: -110px;
     margin-top: -60px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.disactive-slider {
+    width: 44px;
+    height: 6px;
+    background-color: var(--slider-disactive-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.active-slider {
+    width: 44px;
+    height: 8px;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    margin-right: 18px;
+    margin-left: 18px;
+    cursor: pointer;
 }
 
 /* section investor */
@@ -596,10 +630,10 @@ body {
 }
 
 .button-join-us {
-    border: none;
     background-color: var(--button-color);
     color: var(--main-text-color);
     border-radius: 8px;
+    border: 1px solid var(--button-color);
     padding: 12px 35px;
     font-size: 16px;
     font-weight: 600;
@@ -655,8 +689,7 @@ body {
 }
 
 .footer-item:hover {
-    /* color: var(--button-color); */
-    color: var(--main-text-color);
+    color: var(--button-color);
 }
 
 .contact-item:not(:last-child) {
