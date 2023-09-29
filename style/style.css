@@ -96,7 +96,7 @@ body {
     transition-duration: 0.2s;
 }
 
-.option {
+#option {
     border: none;
     border-radius: 4px;
 }
