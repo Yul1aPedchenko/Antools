@@ -67,6 +67,7 @@ body {
     background-color: var(--background-color);
     font-weight: 500;
     color: var(--white-text-55-color);
+    transition-duration: 0.2s;
 }
 
 .nav-wrapper:hover,
@@ -92,6 +93,7 @@ body {
     font-weight: 600;
     margin-right: 41px;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .button-login:hover {
@@ -106,6 +108,7 @@ body {
     background-color: var(--button-color);
     padding: 12px 28px;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .button-sign:hover {
@@ -167,6 +170,7 @@ body {
     padding: 12px 36px;
     margin-left: -147px;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .button-search:hover {
@@ -230,6 +234,7 @@ body {
     border-radius: 15px;
     padding: 33px;
     border: 2px solid var(--background-color);
+    transition-duration: 0.4s;
 }
 
 .card:hover {
@@ -347,6 +352,7 @@ body {
     text-align: center;
     margin: 0 auto;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .button-load-more:hover {
@@ -420,6 +426,7 @@ body {
     padding: 16px 40px;
     margin-top: 60px;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .button-explore-more:hover {
@@ -442,6 +449,7 @@ body {
     padding-left: 22px;
     padding-right: 21px;
     border: 2px solid var(--background-color);
+    transition-duration: 0.4s;
 }
 
 .tools-card-item:hover {
@@ -640,6 +648,7 @@ body {
     font-weight: 600;
     margin-left: -145px;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .button-join-us:hover {
@@ -687,6 +696,7 @@ body {
     color: var(--white-text-55-color);
     font-size: 16px;
     font-weight: 500;
+    transition-duration: 0.2s;
 }
 
 .footer-item:hover {
