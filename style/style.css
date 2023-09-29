@@ -81,6 +81,16 @@ body {
     border-radius: 5px;
 }
 
+/* #option {
+    border: none;
+    border-radius: 4px;
+    color: var(--main-text-color);
+}
+
+#option:hover {
+    color: var(--button-color);
+} */
+
 .header-button-list {
     display: flex;
     align-items: center;
@@ -94,16 +104,6 @@ body {
     margin-right: 41px;
     cursor: pointer;
     transition-duration: 0.2s;
-}
-
-#option {
-    border: none;
-    border-radius: 4px;
-    color: var(--main-text-color);
-}
-
-#option:hover {
-    color: var(--button-color);
 }
 
 .button-login:hover {
