@@ -99,6 +99,11 @@ body {
 #option {
     border: none;
     border-radius: 4px;
+    color: var(--main-text-color);
+}
+
+#option:hover {
+    color: var(--button-color);
 }
 
 .button-login:hover {
