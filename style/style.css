@@ -81,16 +81,6 @@ body {
     border-radius: 5px;
 }
 
-/* #option {
-    border: none;
-    border-radius: 4px;
-    color: var(--main-text-color);
-}
-
-#option:hover {
-    color: var(--button-color);
-} */
-
 .header-button-list {
     display: flex;
     align-items: center;
