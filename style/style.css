@@ -38,7 +38,7 @@ img {
 
 body {
     background-color: var(--background-color);
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 
@@ -79,6 +79,7 @@ body {
     border: none;
     background-color: var(--background-color);
     border-radius: 5px;
+    margin-top: -5px;
 }
 
 .header-button-list {
