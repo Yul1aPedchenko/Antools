@@ -14,75 +14,86 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-section container">
-            <a href="index.html" class="link-white-logo">
-                <img class="white-logo" src="img/white-logo.png" alt="logo">
+        <div class="header__section container">
+            <a href="index.html" class="logo logo--white">
+                <svg class="header__white-logo" width="130" height="33">
+                    <use href="icons/symbol-defs.svg#icon-white-logo"></use>
+                </svg>
             </a>
 
             <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list-item">
-                        <a class="nav-wrapper" href="#">Home</a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__wrapper" href="#">Home</a>
                     </li>
-                    <li class="nav-list-item">
-                        <select class="nav-wrapper header-categories" name="Categories">
+                    <li class="nav__item">
+                        <select class="nav__wrapper nav__header-categories" name="Categories">
                             <option value="1">Categories</option>
                             <option value="2">Desing</option>
                             <option value="3">Development</option>
                         </select>
                     </li>
-                    <li class="nav-list-item">
-                        <a class="nav-wrapper" href="#">My Collections</a>
+                    <li class="nav__item">
+                        <a class="nav__wrapper" href="#">My Collections</a>
                     </li>
-                    <li class="nav-list-item">
-                        <a class="nav-wrapper" href="#">Blog</a>
+                    <li class="nav__item">
+                        <a class="nav__wrapper" href="#">Blog</a>
                     </li>
                 </ul>
             </nav>
 
-            <ul class="header-button-list">
-                <li class="header-button-item">
-                    <button class="button-login">Login</button>
+            <ul class="button__list">
+                <li class="button__wrapper">
+                    <button class="button__item button__item--login">Login</button>
                 </li>
-                <li class="header-button-item">
-                    <button class="button-sign">Sign Up</button>
+                <li class="button-list__wrapper">
+                    <button class="button__item button__item--sign">Sign Up</button>
                 </li>
             </ul>
         </div>
     </header>
 
     <main class="main">
-        <section class="first-section">
+        <section class="main-section">
             <div class="container">
-                <div class="part-with-text">
-                    <h1 class="first-section-title">Awesome tools for Designer & Developer<span class="span-point">.</span></h1>
-                    <p class="first-section-text">Antool is a web collection of information on paid or free Design and Development tools
+                <div class="main-section__text-part">
+                    <h1 class="main-section__title">Awesome tools for Designer & Developer<span class="point">.</span></h1>
+                    <p class="main-section__text">Antool is a web collection of information on paid or free Design and Development tools
                     </p>
                 </div>
                 
-                <form class="form-first">
-                    <label class="first-section-input">
-                        <input class="first-input" type="text" placeholder="find more than 430+ tools...">
+                <form class="main-section__form">
+                    <label class="main-section__label">
+                        <input class="main-section__input" type="text" placeholder="find more than 430+ tools...">
+                        <svg class="main-section__icon" width="24" height="24">
+                            <use href="icons/symbol-defs.svg#icon-search"></use>
+                        </svg>
                     </label>
                 
-                    <button class="button-search">Search</button>
+                    <button class="main-section__button main-section__button--search">Search</button>
                 </form>
                 
-                <div class="first-social-networks">
-                    <ul class="social-networks-list">
-                        <li class="social-networks-items">
+                <div class="social-net">
+                    <ul class="social-net__list">
+                        <li class="social-net__item">
                             <a href="#">
-                                <img src="icons/facebook.png" alt="facebook">
+                                <svg class="social-net__icon" width="34" height="34">
+                                    <use href="icons/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social-networks-items">
+                        <li class="social-net__item">
                             <a href="#">
-                                <img src="icons/instagram.png" alt="inst">
+                                <svg class="social-net__icon" width="36" height="36">
+                                    <use href="icons/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social-networks-items">
+                        <li class="social-net__item">
                             <a href="#">
-                                <img src="icons/twitter.png" alt="twitter">
+                                <svg class="social-net__icon" width="36" height="36">
+                                    <use href="icons/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -90,156 +101,204 @@
             </div>
         </section>
 
-        <section class="second-section">
+        <section class="tools__section">
             <div class="container">
-                <div class=second-part-with-text>
-                    <h2 class="second-section-title">Most Popular Tools</h2>
-                    <p class="second-section-text">Tools for the best Designers and Developers most popularly used in the world</p>
+                <div class=tools__text-part>
+                    <h2 class="tools__title">Most Popular Tools</h2>
+                    <p class="tools__text">Tools for the best Designers and Developers most popularly used in the world</p>
                 </div>
 
-                <div class="part-with-card">
-                    <ul class="card-list">
-                        <li class="card">
-                            <div class="app-all-info">
-                                <div class="app-info">
-                                    <img class="app-img" src="img/figma.png" alt="figma">
-                                    <div class="app-info-text">
-                                        <h4 class="app-name">FIGMA</h4>
-                                        <span class="app-status">Free</span>
+                <div class="tools__card">
+                    <ul class="tools__list">
+                        <li class="tools__item">
+                            <div class="tools__info-wrapper">
+                                <div class="tools__info">
+                                    <img class="tools__img" src="img/figma.png" alt="figma">
+                                    <div class="tools__main-info">
+                                        <h4 class="tools__name">FIGMA</h4>
+                                        <p class="tools__status">Free</p>
                                     </div>
                                 </div>
 
-                                <div class="app-text-div">
-                                    <p class="app-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="tools__text-wrapper">
+                                    <p class="tools__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
 
-                                <div class="app-icon">
-                                    <div class="app-icon-wrapper">
-                                        <img class="app-icon-item like" src="icons/like.png" alt="like">
-                                        <img class="app-icon-item" src="icons/outline.png" alt="">
+                                <div class="tools__button-wrapper">
+                                    <div class="tools__icon-list">
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                <use href="icons/symbol-defs.svg#icon-like"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon" width="30" height="30">
+                                                <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                            </svg>
+                                        </div>
                                     </div>
-
-                                    <a class="link-visit" href="#">Visit</a>
+                                    
+                                    <a class="tools__link-visit" href="#">Visit</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="card">
-                            <div class="app-all-info">
-                                <div class="app-info">
-                                    <img class="app-img" src="img/sketch.png" alt="sketch">
-                                    <div class="app-info-text">
-                                        <h4 class="app-name">Scetch</h4>
-                                        <span class="app-status">Trial & Paid</span>
+                        <li class="tools__item">
+                            <div class="tools__info-wrapper">
+                                <div class="tools__info">
+                                    <img class="tools__img" src="img/sketch.png" alt="sketch">
+                                    <div class="tools__main-info">
+                                        <h4 class="tools__name">Scetch</h4>
+                                        <span class="tools__status">Trial & Paid</span>
                                     </div>
                                 </div>
                                 
-                                <div class="app-text-div">
-                                    <p class="app-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="tools__text-wrapper">
+                                    <p class="tools__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
                             
-                                <div class="app-icon">
-                                    <div class="app-icon-wrapper">
-                                        <img class="app-icon-item like" src="icons/like.png" alt="like">
-                                        <img class="app-icon-item" src="icons/outline.png" alt="">
+                                <div class="tools__button-wrapper">
+                                    <div class="tools__icon-list">
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                <use href="icons/symbol-defs.svg#icon-like"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon" width="30" height="30">
+                                                <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                            </svg>
+                                        </div>
                                     </div>
                             
-                                    <a class="link-visit" href="#">Visit</a>
+                                    <a class="tools__link-visit" href="#">Visit</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="card">
-                            <div class="app-all-info">
-                                <div class="app-info">
-                                    <img class="app-img" src="img/vs-code.png" alt="vs-code">
-                                    <div class="app-info-text">
-                                        <h4 class="app-name">Visual Studio Code</h4>
-                                        <span class="app-status">Free</span>
+                        <li class="tools__item">
+                            <div class="tools__info-wrapper">
+                                <div class="tools__info">
+                                    <img class="tools__img" src="img/vs-code.png" alt="vs-code">
+                                    <div class="tools__main-info">
+                                        <h4 class="tools__name">Visual Studio Code</h4>
+                                        <p class="tools__status">Free</p>
                                     </div> 
                                 </div>
                                 
-                                <div class="app-text-div">
-                                    <p class="app-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="tools__text-wrapper">
+                                    <p class="tools__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
                             
-                                <div class="app-icon">
-                                    <div class="app-icon-wrapper">
-                                        <img class="app-icon-item like" src="icons/like.png" alt="like">
-                                        <img class="app-icon-item" src="icons/outline.png" alt="">
+                                <div class="tools__button-wrapper">
+                                    <div class="tools__icon-list">
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                <use href="icons/symbol-defs.svg#icon-like"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon" width="30" height="30">
+                                                <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                            </svg>
+                                        </div>
                                     </div>
                             
-                                    <a class="link-visit" href="#">Visit</a>
+                                    <a class="tools__link-visit" href="#">Visit</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="card">
-                            <div class="app-all-info">
-                                <div class="app-info">
-                                    <img class="app-img" src="img/notion.png" alt="notino">
-                                    <div class="app-info-text">
-                                        <h4 class="app-name">Notino</h4>
-                                        <span class="app-status">Free & Paid</span>
+                        <li class="tools__item">
+                            <div class="tools__info-wrapper">
+                                <div class="tools__info">
+                                    <img class="tools__img" src="img/notion.png" alt="notino">
+                                    <div class="tools__main-info">
+                                        <h4 class="tools__name">Notino</h4>
+                                        <span class="tools__status">Free & Paid</span>
                                     </div>
                                 </div>
                                 
-                                <div class="app-text-div">
-                                    <p class="app-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="tools__text-wrapper">
+                                    <p class="tools__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
                             
-                                <div class="app-icon">
-                                    <div class="app-icon-wrapper">
-                                        <img class="app-icon-item like" src="icons/like.png" alt="like">
-                                        <img class="app-icon-item" src="icons/outline.png" alt="">
+                                <div class="tools__button-wrapper">
+                                    <div class="tools__icon-list">
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                <use href="icons/symbol-defs.svg#icon-like"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon" width="30" height="30">
+                                                <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                            </svg>
+                                        </div>
                                     </div>
                             
-                                    <a class="link-visit" href="#">Visit</a>
+                                    <a class="tools__link-visit" href="#">Visit</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="card">
-                            <div class="app-all-info">
-                                <div class="app-info">
-                                    <img class="app-img" src="img/Group.png" alt="slack">
-                                    <div class="app-info-text">
-                                        <h4 class="app-name">Slack</h4>
-                                        <span class="app-status">Free & Paid</span>
+                        <li class="tools__item">
+                            <div class="tools__info-wrapper">
+                                <div class="tools__info">
+                                    <img class="tools__img" src="img/Group.png" alt="slack">
+                                    <div class="tools__main-info">
+                                        <h4 class="tools__name">Slack</h4>
+                                        <span class="tools__status">Free & Paid</span>
                                     </div>
                                 </div>
                             
-                                <div class="app-text-div">
-                                    <p class="app-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="tools__text-wrapper">
+                                    <p class="tools__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
                             
-                                <div class="app-icon">
-                                    <div class="app-icon-wrapper">
-                                        <img class="app-icon-item like" src="icons/like.png" alt="like">
-                                        <img class="app-icon-item" src="icons/outline.png" alt="">
+                                <div class="tools__button-wrapper">
+                                    <div class="tools__icon-list">
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                <use href="icons/symbol-defs.svg#icon-like"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon" width="30" height="30">
+                                                <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                            </svg>
+                                        </div>
                                     </div>
                             
-                                    <a class="link-visit" href="#">Visit</a>
+                                    <a class="tools__link-visit" href="#">Visit</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="card">
-                            <div class="app-all-info">
-                                <div class="app-info">
-                                    <img class="app-img" src="img/invision.png" alt="invision">
-                                    <div class="app-info-text">
-                                        <h4 class="app-name">Invision</h4>
-                                        <span class="app-status">Free & Paid</span>
+                        <li class="tools__item">
+                            <div class="tools__info-wrapper">
+                                <div class="tools__info">
+                                    <img class="tools__img" src="img/invision.png" alt="invision">
+                                    <div class="tools__main-info">
+                                        <h4 class="tools__name">Invision</h4>
+                                        <span class="tools__status">Free & Paid</span>
                                     </div>
                                 </div>
                             
-                                <div class="app-text-div">
-                                    <p class="app-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="tools__text-wrapper">
+                                    <p class="tools__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
                             
-                                <div class="app-icon">
-                                    <div class="app-icon-wrapper">
-                                        <img class="app-icon-item like" src="icons/like.png" alt="like">
-                                        <img class="app-icon-item" src="icons/outline.png" alt="">
+                                <div class="tools__button-wrapper">
+                                    <div class="tools__icon-list">
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                <use href="icons/symbol-defs.svg#icon-like"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="tools__icon-wrapper">
+                                            <svg class="tools__icon" width="30" height="30">
+                                                <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                            </svg>
+                                        </div>
                                     </div>
                             
-                                    <a class="link-visit" href="#">Visit</a>
+                                    <a class="tools__link-visit" href="#">Visit</a>
                                 </div>
                             </div>
                         </li>
@@ -291,7 +350,7 @@
                         <ul class="tools-card-list">
                             <li class="tools-card-item">
                                     <div class="tool-info">
-                                        <img class="tool-app-icon" src="img/zeplin.png" alt="zeplin">
+                                        <img class="tool-tools__icon" src="img/zeplin.png" alt="zeplin">
                                         <div class="tools-info-text">
                                             <h4 class="tool-name">Zeplin</h4>
                                             <span class="app-status">Free</span>
@@ -303,17 +362,25 @@
                                     </div>
                                 
                                     <div class="tool-icon">
-                                        <div class="tool-icon-wrapper">
-                                            <img class="tool-icon-item like" src="icons/like.png" alt="like">
-                                            <img class="tool-icon-item" src="icons/outline.png" alt="">
+                                        <div class="tools__icon-list">
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                    <use href="icons/symbol-defs.svg#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon" width="30" height="30">
+                                                    <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                                </svg>
+                                            </div>
                                         </div>
-                                
-                                        <a class="tool-link-visit" href="#">Visit</a>
+                                        
+                                        <a class="tools__link-visit" href="#">Visit</a>
                                     </div>
                             </li>
                             <li class="tools-card-item">
                                     <div class="tool-info">
-                                        <img class="tool-app-icon" src="img/phpstorm.png" alt="php">
+                                        <img class="tool-tools__icon" src="img/phpstorm.png" alt="php">
                                         <div class="tools-info-text">
                                             <h4 class="tool-name">PHPStorm</h4>
                                             <span class="app-status">Free</span>
@@ -325,17 +392,25 @@
                                     </div>
                                 
                                     <div class="tool-icon">
-                                        <div class="tool-icon-wrapper">
-                                            <img class="tool-icon-item like" src="icons/like.png" alt="like">
-                                            <img class="tool-icon-item" src="icons/outline.png" alt="">
+                                        <div class="tools__icon-list">
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                    <use href="icons/symbol-defs.svg#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon" width="30" height="30">
+                                                    <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                                </svg>
+                                            </div>
                                         </div>
-
-                                        <a class="tool-link-visit" href="#">Visit</a>
+                                        
+                                        <a class="tools__link-visit" href="#">Visit</a>
                                 </div>
                             </li>
                             <li class="tools-card-item">
                                     <div class="tool-info">
-                                        <img class="tool-app-icon" src="img/toolbox.png" alt="toolbox">
+                                        <img class="tool-tools__icon" src="img/toolbox.png" alt="toolbox">
                                         <div class="tools-info-text">
                                             <h4 class="tool-name">Toolbox</h4>
                                             <span class="app-status">Free</span>
@@ -347,17 +422,25 @@
                                     </div>
                                 
                                     <div class="tool-icon">
-                                        <div class="tool-icon-wrapper">
-                                            <img class="tool-icon-item like" src="icons/like.png" alt="like">
-                                            <img class="tool-icon-item" src="icons/outline.png" alt="">
+                                        <div class="tools__icon-list">
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                    <use href="icons/symbol-defs.svg#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon" width="30" height="30">
+                                                    <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                                </svg>
+                                            </div>
                                         </div>
-                                
-                                        <a class="tool-link-visit" href="#">Visit</a>
+                                        
+                                        <a class="tools__link-visit" href="#">Visit</a>
                                     </div>
                             </li>
                             <li class="tools-card-item">
                                     <div class="tool-info">
-                                        <img class="tool-app-icon" src="img/procreate.png" alt="procteate">
+                                        <img class="tool-tools__icon" src="img/procreate.png" alt="procteate">
                                         <div class="tools-info-text">
                                             <h4 class="tool-name">Procreate</h4>
                                             <span class="app-status">Paid</span>
@@ -369,12 +452,20 @@
                                     </div>
                                 
                                     <div class="tool-icon">
-                                        <div class="tool-icon-wrapper">
-                                            <img class="tool-icon-item like" src="icons/like.png" alt="like">
-                                            <img class="tool-icon-item" src="icons/outline.png" alt="">
+                                        <div class="tools__icon-list">
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon tools__icon--like" width="28" height="28">
+                                                    <use href="icons/symbol-defs.svg#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tools__icon-wrapper">
+                                                <svg class="tools__icon" width="30" height="30">
+                                                    <use href="icons/symbol-defs.svg#icon-folder"></use>
+                                                </svg>
+                                            </div>
                                         </div>
-                                
-                                        <a class="tool-link-visit" href="#">Visit</a>
+                                        
+                                        <a class="tools__link-visit" href="#">Visit</a>
                                     </div>
                             </li>
                         </ul>
